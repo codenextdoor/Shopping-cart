@@ -42,7 +42,7 @@
   </body>
 </html>
 
-<!-- 20 mins 
+<!-- 20  
 yarn add phosphor-react react-router-dom
 
 in App.js Setting up our routes from rrd
@@ -73,6 +73,80 @@ import pages in app
 >shop.jsx h1 shop name 
 
 src make n.f products c+p
+-->
+
+<!-- 20 - 40
+
+  >shop.jsx div of products
+  
+  import PRODUCTS Array 
+
+  map the products array <Product/>
+   -make new comp under shop folder
+
+  import that to shop 
+
+  create a prop data <Product data
+
+  then go to product comp pass prop 
+
+  const {array data haru} = props.data
+
+  check return {smth}
+
+  add img desc price btn
+
+>shop folddder n.f shop.css  import css in shop
+
+NOW WE MANAGE A STATE so we can acess in multiple routes
+
+>src > context > shopContext.jsx > export const ShopContextProvider
+
+above that export const ShopContext = createContext(null)
+
+return SC.prov , add props {props.children}
+
+use state cartItems 
+
+make new function that increase the cart if u add id 
+
+insert func in usestate()
+
+make func to addtocart , remove to card 
+
+provider needs value which requires obj 
+
+make contextValue and add all functions in an obj
+
+above router wrap with ShopcontextProvider also imp
+
+>product import shopContext , const {which func u need,cartItems} = useContext(pass here)
+
+in our btn add onclick addtoCart,id exists in props
+
+test >shopContext above return log(cartItems)
+
+make a smth that stores cartItems[id]
+
+{cIA > 0 && <> ({cIA})</> } it shows addtocart(4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
