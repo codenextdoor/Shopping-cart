@@ -14,7 +14,7 @@ const Cart = () => {
   return (
     <div className="cart">
       <div>
-        <h1> Your cart items are </h1>
+        <h1> Your cart items are : </h1>
       </div>
       <div className="cartItems">
         {PRODUCTS.map((product) => {
@@ -24,13 +24,14 @@ const Cart = () => {
         })}
       </div>
       {totalAmount > 0 ? (
-      <div className="checkout">
-      
-        <p>Subtotal: ${totalAmount}</p>
-        <button onClick={() => navigate("/")}>Continue Shopping</button>
-        <button>Checkout</button>
-      </div>
-    ): ( <h1> Empty </h1>  )}
+        <div className="checkout">
+          <p>Subtotal: ${totalAmount}</p>
+          <button onClick={() => navigate("/")}>Continue Shopping</button>
+          <button>Checkout</button>
+        </div>
+      ) : (
+        <h1> Empty </h1>
+      )}
     </div>
   );
 };
